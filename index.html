@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Portfolio de Aicha RBATIA — élève ingénieure, Développement Full Stack & Data/BI. Stage PFE de 6 mois dès février 2027.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%235c1128%22/><text x=%2250%22 y=%2272%22 font-size=%2262%22 text-anchor=%22middle%22 fill=%22%23fff%22 font-family=%22Georgia%22 font-weight=%22bold%22>A</text></svg>">
+<title>Aicha RBATIA — Ingénieure Full Stack & Data/BI</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fdfaf7;--bg2:#f7ece3;--card:#fff;--v:#5c1128;--v2:#8a3452;--vl:rgba(92,17,40,.08);--t:#2a0f18;--t2:#5a4a4f;--t3:#8d7e82;--bd:rgba(92,17,40,.13);--sh:0 10px 40px rgba(92,17,40,.08);--g:rgba(253,250,247,.92);--onv:#fff}
+[data-theme=dark]{--bg:#170d11;--bg2:#1e1217;--card:#27181e;--v:#eba9b9;--v2:#f4c8d3;--vl:rgba(235,169,185,.12);--t:#f9eff1;--t2:#cdbcc1;--t3:#8f7f84;--bd:rgba(255,255,255,.1);--sh:0 10px 40px rgba(0,0,0,.4);--g:rgba(23,13,17,.92);--onv:#2a0f18}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--bg);color:var(--t2);line-height:1.75;transition:background .3s,color .3s}
+h1,h2,h3{font-family:'Playfair Display',Georgia,serif;color:var(--t);line-height:1.15}
+a{color:inherit;text-decoration:none}strong{color:var(--v);font-weight:700}
+.wrap{max-width:1200px;margin:0 auto}section{padding:6.5rem 6%}.alt{background:var(--bg2)}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1rem 6%;background:var(--g);backdrop-filter:blur(14px);border-bottom:1px solid var(--bd)}
+.logo{font-family:'Playfair Display',serif;font-weight:700;font-size:1.35rem;color:var(--t);white-space:nowrap}.logo span{font-family:'Plus Jakarta Sans';font-weight:400;color:var(--v)}
+.links{display:flex;gap:1.7rem}.links a{font-size:.76rem;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--t2);white-space:nowrap;transition:.2s}.links a:hover{color:var(--v)}
+.ctl{display:flex;gap:.5rem;align-items:center}
+.ic{width:42px;height:42px;border-radius:50%;border:0;background:var(--vl);color:var(--v);font-size:1.15rem;cursor:pointer;font-weight:700;font-family:inherit}.ic:hover{background:var(--v);color:var(--onv)}
+#burger{display:none}
+#hero{min-height:100vh;display:flex;align-items:center;padding-top:8rem;background:radial-gradient(circle at 80% 30%,var(--vl),transparent 55%)}
+.hero{display:grid;grid-template-columns:1.2fr .8fr;gap:3rem;align-items:center}
+.eyebrow{font-size:.9rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--v)}
+.hero h1{font-size:clamp(3.4rem,8.5vw,6.4rem);font-weight:800;margin:1.2rem 0 2rem;letter-spacing:-.01em}
+.quote{border-left:3px solid var(--v);padding-left:1.6rem;max-width:620px;font-size:1.12rem;margin-bottom:2.4rem}
+.btns{display:flex;gap:1rem;flex-wrap:wrap}
+.btn{padding:1rem 2.2rem;border-radius:99px;font-weight:600;font-size:.98rem;border:1px solid var(--bd);transition:.25s;background:var(--card);color:var(--t)}
+.btn.p{background:var(--v);color:var(--onv);border-color:var(--v);box-shadow:0 10px 30px rgba(92,17,40,.28)}.btn:hover{transform:translateY(-3px)}
+.badge{display:inline-block;margin-top:1.8rem;font-size:.85rem;font-weight:600;background:var(--vl);color:var(--v);padding:.5rem 1.1rem;border-radius:99px}
+.photo{width:min(430px,80vw);aspect-ratio:1;border-radius:50%;object-fit:cover;object-position:50% 18%;justify-self:center;border:14px solid var(--card);background:#cdb8a6;box-shadow:0 0 0 1px var(--bd),0 25px 70px rgba(92,17,40,.2)}
+.st{text-align:center;margin-bottom:4rem}.st h2{font-size:clamp(2.2rem,5vw,3.4rem)}.st h2::after{content:"";display:block;width:76px;height:4px;border-radius:3px;background:var(--v);margin:1.1rem auto 0}
+.about{max-width:900px;margin:0 auto;text-align:center;font-size:1.12rem}.about p+p{margin-top:1.6rem}
+.grid4{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:22px;padding:2rem;box-shadow:var(--sh);transition:.25s}.card:hover{transform:translateY(-5px)}
+.card .n{font-family:'Playfair Display',serif;font-size:2.4rem;font-weight:700;color:var(--v);opacity:.35;line-height:1}
+.card h3{font-size:1.3rem;margin:.8rem 0 .6rem}.card p{font-size:.95rem}
+.tl{max-width:900px;margin:0 auto;border-left:2px solid var(--bd);padding-left:2.2rem;display:grid;gap:2.4rem}
+.tl article{position:relative;background:var(--card);border:1px solid var(--bd);border-radius:20px;padding:1.6rem 1.8rem;box-shadow:var(--sh)}
+.tl article::before{content:"";position:absolute;left:-2.95rem;top:2rem;width:1rem;height:1rem;border-radius:50%;background:var(--v);border:4px solid var(--bg)}.alt .tl article::before{border-color:var(--bg2)}
+.tl .d{font-size:.78rem;font-weight:700;color:var(--v);letter-spacing:.08em}.tl h3{font-size:1.3rem;margin:.3rem 0 .15rem}.tl .co{font-weight:600;color:var(--v2)}
+.tl ul{margin:.8rem 0 0 1.1rem;font-size:.95rem}.tl li{margin-bottom:.35rem}
+.chips{display:flex;flex-wrap:wrap;gap:.55rem;margin:1.2rem 0 0}.chips span{font-size:.82rem;font-weight:600;padding:.4rem 1rem;border-radius:99px;background:var(--vl);color:var(--v)}
+.pj{display:grid;grid-template-columns:1.05fr 1fr;gap:2.4rem;align-items:center;background:var(--card);border:1px solid var(--bd);border-radius:32px;padding:1.2rem;box-shadow:var(--sh);margin-bottom:2.4rem}
+.pj .im{background:#faf6f1;border:1px solid var(--bd);border-radius:22px;padding:.6rem;cursor:zoom-in}.pj img{display:block;width:100%;border-radius:16px}
+.pj .tx{padding:1rem 1.6rem 1rem 0}.pj .k{font-size:.75rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--v)}
+.pj h3{font-size:clamp(1.7rem,3vw,2.4rem);margin:.5rem 0 1rem}.pj p{font-size:1.02rem}
+.lnk{display:inline-block;margin-top:1.6rem;font-weight:700;font-size:.9rem;letter-spacing:.08em;text-transform:uppercase;color:var(--v);cursor:pointer;background:none;border:0;font-family:inherit}.lnk:hover{letter-spacing:.12em}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem}
+.sk{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem}.sk h3{font-family:'Plus Jakarta Sans';font-size:1.05rem;font-weight:700}.sk .chips{margin-top:1rem}
+.edu small{color:var(--v);font-weight:700;letter-spacing:.06em}.edu h3{font-size:1.2rem;margin:.5rem 0 .3rem}
+.ct{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1.2rem;max-width:1000px;margin:0 auto 2.5rem}
+.ct .card{text-align:center;padding:1.6rem}.ct small{display:block;font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--v);margin-bottom:.3rem}.ct a{font-weight:600;color:var(--t);word-break:break-word}
+footer{text-align:center;padding:2.2rem;font-size:.85rem;color:var(--t3);border-top:1px solid var(--bd)}
+#lb{display:none;position:fixed;inset:0;z-index:100;background:rgba(20,8,12,.92);align-items:center;justify-content:center;padding:2rem;cursor:zoom-out}#lb.on{display:flex}#lb img{max-width:100%;max-height:92vh;border-radius:12px;background:#faf6f1}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .7s,transform .7s}.rv.in{opacity:1;transform:none}
+@media(max-width:960px){#burger{display:block}.links{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:var(--bg);border-bottom:1px solid var(--bd);padding:.5rem 6%}.links.open{display:flex}.links a{padding:.9rem 0;border-bottom:1px solid var(--bd)}
+.hero,.pj{grid-template-columns:1fr}.photo{order:-1;width:min(300px,70vw)}.pj .tx{padding:0 1rem 1rem}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="#" class="logo">Aicha <span>.RBATIA</span></a>
+  <div class="links" id="links">
+    <a href="#about" data-en="About">À propos</a><a href="#expertise">Expertise</a><a href="#exp" data-en="Experience">Expérience</a><a href="#projects" data-en="Projects">Projets</a><a href="#skills" data-en="Skills">Compétences</a><a href="#edu" data-en="Education">Formation</a><a href="#contact">Contact</a>
+  </div>
+  <div class="ctl"><button class="ic" id="lang" style="font-size:.78rem">EN</button><button class="ic" id="theme" aria-label="Thème">☾</button><button class="ic" id="burger" aria-label="Menu">☰</button></div>
+</nav>
+
+<section id="hero"><div class="wrap hero">
+  <div>
+    <p class="eyebrow" data-en="Engineering student · Full Stack & Data/BI">Élève ingénieure · Full Stack & Data/BI</p>
+    <h1>Aicha<br>RBATIA</h1>
+    <div class="quote"><span data-en="Welcome to my portfolio!">Bienvenue sur mon portfolio !</span><br><span data-en="Discover my projects, skills and experience by exploring my professional journey.">Découvrez mes projets, compétences et expériences en explorant mon parcours professionnel.</span></div>
+    <div class="btns"><a href="#contact" class="btn p" data-en="Contact me">Me Contacter</a><a href="#projects" class="btn" data-en="View projects">Voir Projets</a><a href="CV_RBATIA_Aicha_Developpement_Full_Stack_DataBI.pdf.pdf" class="btn" download>CV (PDF)</a></div>
+    <span class="badge" data-en="🎓 Seeking a 6-month PFE internship in Full Stack Development & Data/BI from February 2027">🎓 À la recherche d’un stage PFE de 6 mois en Développement Full Stack & Data/BI à partir de février 2027</span>
+  </div>
+  <img class="photo" src="/img/profile_pro.png" alt="Aicha RBATIA">
+</div></section>
+
+<section id="about" class="alt"><div class="wrap">
+  <div class="st rv"><h2 data-en="About me">À Propos</h2></div>
+  <div class="about rv">
+    <p data-en="My name is <strong>Aicha RBATIA</strong>, a <strong>final-year engineering student</strong> in <strong>Information Systems Management and Governance</strong> at ENSIASD, Taroudant. Passionate about building applications and making the most of data, I specialise in <strong>Full Stack development</strong>, <strong>Data/BI</strong> and <strong>applied artificial intelligence</strong>.">Je m'appelle <strong>Aicha RBATIA</strong>, élève ingénieure en <strong>dernière année</strong> du cycle ingénieur <strong>Management et Gouvernance des Systèmes d'Information</strong> à l'ENSIASD de Taroudant. Passionnée par la conception d'applications et la valorisation des données, je me spécialise en <strong>développement Full Stack</strong>, <strong>Data/BI</strong> et <strong>intelligence artificielle appliquée</strong>.</p>
+    <p data-en="My skills cover the whole life of an information system: <strong>requirements analysis, design, development, secure deployment and decision reporting</strong>, from the API to the dashboard.">Mon parcours couvre toute la vie d'un système d'information : <strong>analyse des besoins, conception, développement, déploiement sécurisé et reporting décisionnel</strong>, de l'API jusqu'au tableau de bord.</p>
+    <p data-en="At ARCHITEO I built an <strong>intelligent recruitment platform</strong> (React.js, Spring Boot, Ollama, Power BI), alongside several <strong>Laravel</strong> applications. I am now looking for a <strong>6-month PFE internship</strong> starting <strong>February 2027</strong>.">Chez ARCHITEO, j'ai conçu une <strong>plateforme de recrutement intelligente</strong> (React.js, Spring Boot, Ollama, Power BI), en plus de plusieurs applications <strong>Laravel</strong>. Je recherche aujourd'hui un <strong>stage PFE de 6 mois</strong> à partir de <strong>février 2027</strong>.</p>
+  </div>
+</div></section>
+
+<section id="expertise"><div class="wrap">
+  <div class="st rv"><h2>Expertise</h2></div>
+  <div class="grid4">
+    <div class="card rv"><span class="n">01</span><h3 data-en="Full Stack Development">Développement Full Stack</h3><p data-en="Web applications with React.js, Spring Boot and Laravel, secured REST APIs and relational databases.">Applications web avec React.js, Spring Boot et Laravel, API REST sécurisées et bases de données relationnelles.</p></div>
+    <div class="card rv"><span class="n">02</span><h3>Data & Business Intelligence</h3><p data-en="Dashboards and decision-support reporting with Power BI, data warehouse and multidimensional modelling.">Tableaux de bord et reporting décisionnel avec Power BI, Data Warehouse et modélisation multidimensionnelle.</p></div>
+    <div class="card rv"><span class="n">03</span><h3 data-en="Applied AI">IA appliquée</h3><p data-en="Local LLMs with Ollama, embeddings, semantic CV matching and HR chatbot.">LLM locaux avec Ollama, embeddings, matching sémantique de CV et chatbot RH.</p></div>
+    <div class="card rv"><span class="n">04</span><h3 data-en="ERP & IS Governance">ERP & Gouvernance SI</h3><p data-en="Odoo module development, IS audit with ITIL v4, COBIT and CMMI.">Développement de modules Odoo, audit des SI avec ITIL v4, COBIT et CMMI.</p></div>
+  </div>
+</div></section>
+
+<section id="exp" class="alt"><div class="wrap">
+  <div class="st rv"><h2 data-en="Experience">Expérience</h2></div>
+  <div class="tl">
+    <article class="rv"><div class="d">15/06/2026 – 15/08/2026</div><h3 data-en="Intern — Intelligent Recruitment System (ATS)">Stagiaire — Système Intelligent de Recrutement (ATS)</h3><div class="co">ARCHITEO</div>
+      <ul><li data-en="Design and development of an intelligent system that automates and optimises recruitment.">Conception et développement d'un système intelligent qui automatise et optimise le recrutement.</li>
+      <li data-en="CV analysis, smart matching, pipeline tracking, interview scheduling, HR chatbot and decision reporting.">Analyse des CV, matching intelligent, suivi du pipeline, planification des entretiens, chatbot RH et reporting décisionnel.</li>
+      <li data-en="AI integration with Ollama and embeddings for profile analysis and search.">Intégration de l'IA avec Ollama et les embeddings pour l'analyse et la recherche de profils.</li></ul>
+      <div class="chips"><span>React.js</span><span>Spring Boot</span><span>MySQL</span><span>Ollama</span><span>Keycloak</span><span>MFA/OTP</span><span>Power BI</span></div></article>
+    <article class="rv"><div class="d">01/07/2025 – 01/08/2025</div><h3 data-en="Web Development Intern">Stagiaire — Développement Web</h3><div class="co">Technopark Essaouira</div>
+      <ul><li data-en="Built TechnoparkEssaouiraClaim, a claims tracking web app: requirements analysis, functional modelling and development.">Développement de TechnoparkEssaouiraClaim, application de suivi des réclamations : analyse des besoins, modélisation fonctionnelle et développement.</li></ul>
+      <div class="chips"><span>Laravel</span><span>PHP</span><span>Tailwind CSS</span><span>MySQL</span><span>Ajax</span><span>jQuery</span></div></article>
+    <article class="rv"><div class="d">01/04/2024 – 31/05/2024</div><h3 data-en="DUT Final Internship">Stage de fin d'études (DUT)</h3><div class="co">Al Omrane, Rabat</div>
+      <ul><li data-en="Built OmraneBillingPlus to automate invoice management, including database design and business features.">Développement de OmraneBillingPlus pour automatiser la gestion des factures, avec conception de la base de données et fonctionnalités métier.</li></ul>
+      <div class="chips"><span>Laravel</span><span>JavaScript</span><span>Bootstrap</span><span>Ajax</span></div></article>
+    <article class="rv"><div class="d">01/06/2023 – 01/08/2023</div><h3 data-en="Web Development Intern">Stagiaire — Développement Web</h3><div class="co">Al Omrane, Rabat</div>
+      <ul><li data-en="Web application for IT asset management.">Application web de gestion du parc informatique.</li></ul>
+      <div class="chips"><span>PHP</span><span>MySQL</span><span>Tailwind CSS</span><span>jQuery</span></div></article>
+  </div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+  <div class="st rv"><h2 data-en="Projects">Projets</h2></div>
+  <div class="pj rv"><div class="im"><img src="/img/architeo-architecture.svg" alt="Architecture ATS" data-zoom></div><div class="tx"><span class="k" data-en="Internship · ARCHITEO">Stage · ARCHITEO</span><h3 data-en="Intelligent Recruitment System (ATS)">Système Intelligent de Recrutement (ATS)</h3>
+    <p data-en="3-layer platform: React.js front end, Spring Boot REST API and MySQL. Local AI (Ollama) analyses CVs and matches candidates; Keycloak and OTP secure access; Power BI feeds decision reporting.">Plateforme en 3 couches : front React.js, API REST Spring Boot et MySQL. L'IA locale (Ollama) analyse les CV et associe les candidats ; Keycloak et l'OTP sécurisent l'accès ; Power BI alimente le reporting décisionnel.</p>
+    <div class="chips"><span>React.js</span><span>Spring Boot</span><span>Ollama</span><span>Keycloak</span><span>Power BI</span></div><button class="lnk" data-zoomtrigger data-en="See the architecture →">Voir l'architecture →</button></div></div>
+  <div class="pj rv"><div class="im"><img src="/img/technopark-mvc.svg" alt="Architecture MVC Technopark" data-zoom></div><div class="tx"><span class="k" data-en="Internship · Technopark Essaouira">Stage · Technopark Essaouira</span><h3 data-en="TechnoparkEssaouiraClaim">TechnoparkEssaouiraClaim</h3>
+    <p data-en="Laravel claims tracking application following the MVC pattern: routes and middleware, controllers, Eloquent models on MySQL and Blade views with Tailwind CSS.">Application Laravel de suivi des réclamations en architecture MVC : routes et middlewares, contrôleurs, modèles Eloquent sur MySQL et vues Blade en Tailwind CSS.</p>
+    <div class="chips"><span>Laravel</span><span>MySQL</span><span>Tailwind CSS</span><span>Ajax</span></div><button class="lnk" data-zoomtrigger data-en="See the architecture →">Voir l'architecture →</button></div></div>
+  <div class="pj rv"><div class="im"><img src="/img/omrane-mvc.svg" alt="Architecture MVC OmraneBillingPlus" data-zoom></div><div class="tx"><span class="k" data-en="DUT internship · Al Omrane">Stage DUT · Al Omrane</span><h3>OmraneBillingPlus</h3>
+    <p data-en="Laravel MVC application that automates invoice management and processing follow-up, with a custom database design and Bootstrap views.">Application Laravel MVC qui automatise la gestion des factures et le suivi de leur traitement, avec une base de données conçue sur mesure et des vues Bootstrap.</p>
+    <div class="chips"><span>Laravel</span><span>Bootstrap</span><span>JavaScript</span><span>MySQL</span></div><button class="lnk" data-zoomtrigger data-en="See the architecture →">Voir l'architecture →</button></div></div>
+  <div class="pj rv"><div class="im"><img src="/img/odoo-architecture.svg" alt="Architecture module Odoo" data-zoom></div><div class="tx"><span class="k">ENSIASD · ERP</span><h3 data-en="Odoo ERP — Academic Management">ERP Odoo — Gestion académique</h3>
+    <p data-en="Odoo 19 modules: Python ORM models, XML views, workflows and access-rights management.">Modules Odoo 19 : modèles ORM Python, vues XML, workflows et gestion des droits d'accès.</p>
+    <div class="chips"><span>Odoo 19</span><span>Python</span><span>PostgreSQL</span><span>XML</span></div><button class="lnk" data-zoomtrigger data-en="See the architecture →">Voir l'architecture →</button></div></div>
+  <div class="two">
+    <div class="card rv"><span class="k" style="font-size:.75rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--v)" data-en="ENSIASD · IS Audit">ENSIASD · Audit des SI</span><h3 data-en="IS Audit (ITIL v4)">Audit des SI (ITIL v4)</h3><p data-en="Process analysis, risk identification and an improvement plan.">Analyse des processus, identification des risques et plan d'amélioration.</p><div class="chips"><span>ITIL v4</span><span>COBIT</span><span>CMMI</span></div></div>
+    <div class="card rv"><span class="k" style="font-size:.75rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--v)" data-en="DUT · Final project">DUT · Projet de fin d'études</span><h3 data-en="Academic Report Management">Gestion de rapports académiques</h3><p data-en="WordPress plugins to manage and submit academic reports.">Plugins WordPress pour la gestion et la soumission des rapports académiques.</p><div class="chips"><span>WordPress</span><span>PHP</span><span>Bootstrap</span><span>MySQL</span></div></div>
+  </div>
+</div></section>
+
+<section id="skills" class="alt"><div class="wrap">
+  <div class="st rv"><h2 data-en="Skills">Compétences</h2></div>
+  <div class="sk">
+    <div class="card rv"><h3 data-en="Programming">Langages</h3><div class="chips"><span>Java</span><span>Python</span><span>C</span><span>C++</span></div></div>
+    <div class="card rv"><h3>Full Stack</h3><div class="chips"><span>React.js</span><span>Spring Boot</span><span>Laravel</span><span>PHP</span><span>JavaScript</span><span>HTML5</span><span>CSS3</span><span>Tailwind CSS</span><span>Bootstrap</span><span>jQuery</span><span>Ajax</span></div></div>
+    <div class="card rv"><h3 data-en="Databases">Bases de données</h3><div class="chips"><span>MySQL</span><span>PostgreSQL</span><span>Oracle</span><span>PL/SQL</span><span>MongoDB</span></div></div>
+    <div class="card rv"><h3 data-en="Artificial Intelligence">Intelligence Artificielle</h3><div class="chips"><span>Ollama</span><span>Embeddings</span><span data-en="Semantic matching">Matching sémantique</span><span>Chatbot</span></div></div>
+    <div class="card rv"><h3>Data & Business Intelligence</h3><div class="chips"><span>Power BI</span><span>Data Warehouse</span><span data-en="Decision-support systems">SI décisionnels</span></div></div>
+    <div class="card rv"><h3>ERP</h3><div class="chips"><span>Odoo 19</span><span data-en="Workflow configuration">Paramétrage de workflows</span><span data-en="User management">Gestion des utilisateurs</span></div></div>
+    <div class="card rv"><h3 data-en="IS Governance & Audit">Gouvernance & Audit des SI</h3><div class="chips"><span data-en="IS audit">Audit des SI</span><span>ITIL v4</span><span>COBIT</span><span>CMMI</span><span data-en="Portfolio management">Gestion de portefeuille</span><span data-en="IS urbanisation">Urbanisation des SI</span></div></div>
+    <div class="card rv"><h3 data-en="Security">Sécurité</h3><div class="chips"><span>Keycloak</span><span>MFA/OTP</span></div></div>
+    <div class="card rv"><h3 data-en="Modelling & Methods">Modélisation & Méthodes</h3><div class="chips"><span>UML</span><span>Merise</span><span>Agile/Scrum</span><span>Design Thinking</span></div></div>
+    <div class="card rv"><h3 data-en="Languages">Langues</h3><div class="chips"><span data-en="Arabic (native)">Arabe (maternelle)</span><span data-en="French (fluent)">Français (courant)</span><span data-en="English (intermediate)">Anglais (intermédiaire)</span></div></div>
+  </div>
+</div></section>
+
+<section id="edu"><div class="wrap">
+  <div class="st rv"><h2 data-en="Education">Formation</h2></div>
+  <div class="grid4" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr))">
+    <div class="card edu rv"><small>2024 – <span data-en="Present">Présent</span></small><h3 data-en="Engineering Degree — IS Management & Governance (5th year)">Cycle Ingénieur — Management et Gouvernance des SI (5e année)</h3><p>ENSIASD, Taroudant</p></div>
+    <div class="card edu rv"><small>2022 – 2024</small><h3 data-en="DUT — Computer Engineering">DUT — Génie Informatique</h3><p data-en="École Supérieure de Technologie, Essaouira">École Supérieure de Technologie, Essaouira</p></div>
+    <div class="card edu rv"><small>2021 – 2022</small><h3 data-en="Baccalaureate — Physical Sciences & Chemistry">Baccalauréat — Sciences Physiques et Chimiques</h3><p>Lycée Prince Moulay Rachid, Essaouira</p></div>
+  </div>
+</div></section>
+
+<section id="contact" class="alt"><div class="wrap">
+  <div class="st rv"><h2>Contact</h2></div>
+  <p class="about rv" style="margin-bottom:2.5rem" data-en="I am looking for a <strong>6-month PFE internship in Full Stack Development & Data/BI</strong> starting <strong>February 2027</strong>. Let's talk about your offer!">Je recherche un <strong>stage PFE de 6 mois en Développement Full Stack & Data/BI</strong> à partir de <strong>février 2027</strong>. Parlons de votre offre !</p>
+  <div class="ct">
+    <div class="card rv"><small>Email</small><a href="mailto:aicharbatia98@gmail.com">aicharbatia98@gmail.com</a></div>
+    <div class="card rv"><small data-en="Phone">Téléphone</small><a href="tel:+212766891113">+212 7 66 89 11 13</a></div>
+    <div class="card rv"><small>LinkedIn</small><a href="https://www.linkedin.com/in/aicha-rbatia/" target="_blank" rel="noopener">aicha-rbatia</a></div>
+    <div class="card rv"><small data-en="Location">Localisation</small><a>Rabat, Maroc</a></div>
+  </div>
+  <div class="btns" style="justify-content:center"><a class="btn p" href="mailto:aicharbatia98@gmail.com" data-en="Write to me">Écrivez-moi</a></div>
+</div></section>
+
+<footer>© 2026 Aicha RBATIA · Rabat, Maroc</footer>
+<div id="lb"><img alt=""></div>
+
+<script>
+const $=s=>document.querySelector(s),root=document.documentElement;
+const setTheme=t=>{root.dataset.theme=t;$('#theme').textContent=t==='dark'?'☀':'☾';try{localStorage.setItem('theme',t)}catch(e){}};
+let th='light';try{th=localStorage.getItem('theme')||'light'}catch(e){}
+setTheme(th);$('#theme').onclick=()=>setTheme(root.dataset.theme==='dark'?'light':'dark');
+let lang='fr';document.querySelectorAll('[data-en]').forEach(e=>e.dataset.fr=e.innerHTML);
+$('#lang').onclick=()=>{lang=lang==='fr'?'en':'fr';root.lang=lang;document.querySelectorAll('[data-en]').forEach(e=>e.innerHTML=lang==='en'?e.dataset.en:e.dataset.fr);$('#lang').textContent=lang==='fr'?'EN':'FR'};
+$('#burger').onclick=()=>$('#links').classList.toggle('open');
+document.querySelectorAll('#links a').forEach(a=>a.onclick=()=>$('#links').classList.remove('open'));
+const lb=$('#lb'),zoom=i=>{lb.querySelector('img').src=i.src;lb.classList.add('on')};
+document.querySelectorAll('[data-zoom]').forEach(i=>i.onclick=()=>zoom(i));
+document.querySelectorAll('[data-zoomtrigger]').forEach(b=>b.onclick=()=>zoom(b.closest('.pj').querySelector('img')));
+lb.onclick=()=>lb.classList.remove('on');document.addEventListener('keydown',e=>{if(e.key==='Escape')lb.classList.remove('on')});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(e=>io.observe(e));
+</script>
+</body>
+</html>
